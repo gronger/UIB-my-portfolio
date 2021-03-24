@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Grainger Web Developer Portfolio - Contact</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="header-info lato">
+                <p>Joseph Grainger</p>
+                <p>Web Development</p>
+            </div>
+        </div>
+        
+        
+        <div> 
+            <nav>
+                <ul class="lato">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>In case of any possible queries, questions, ideas you might have or whatever else, please get in touch with me via this contact form!</p>
+        </section>
+
+        <section>
+            <form action="POST">
+
+                <div>
+                    <label for="name">Who are you?</label>
+                    <input type="text" name="name" id="name" placeholder="My name is..." min-length="3">
+                </div>
+
+                <div>
+                    <label for="email">Where can I contact you?</label>
+                    <input type="email" name="email" id="email" placeholder="My email address is..." min-length="5">
+                </div>
+
+                <div>
+                    <label for="message">What would you like to say?</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Hi Joseph..." min-length="10"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

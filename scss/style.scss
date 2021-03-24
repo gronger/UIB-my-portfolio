@@ -1,0 +1,174 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Pangolin&display=swap');
+
+// font-family: 'DotGothic16', sans-serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Pangolin', cursive;
+
+/* Small screens - MOBILE */
+/* Define mobile styles - Mobile First 
+
+WRITE EVERYTHING HERE IN THE ROOT TO FIT MOBILE (IPHONE X)* THEN ADD OTHER STUFF AFTER IN MEDIA QUIEREIS */
+
+
+// header {
+// background-color:pink;
+// }
+
+// /* Hide Hamburger */
+// #hamnav label, #hamburger { display: none;
+  
+//  }
+
+// #hamnav {
+//   background-color: green;
+// }
+
+// /* Horizontal Menu Items */
+// #hamitems { display: flex; }
+// #hamitems a {
+//   width: 20%; /* 100% / 5 tabs = 20% */
+//   padding: 10px;
+//   color: black;
+//   text-decoration: none;
+//   text-align: center;
+// }
+// #hamitems a:hover {
+//   background: #401408;
+// }
+
+// /* [ON SMALL SCREENS] */
+// // @media screen and (max-width: 768px){
+//   /* Show Hamburger Icon */
+//   #hamnav label { 
+//     display: inline-block; 
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     color: white;
+//     background: #a02620;
+//     font-style: normal;
+//     font-size: 1.2em;
+//     padding: 10px;
+//   }
+
+//   /* Break down menu items into vertical */
+//   #hamitems a {
+//     box-sizing: border-box;
+//     display: block;
+//     width: 100%;
+//     border-top: 1px solid #333;
+//   }
+
+//   /* Toggle Show/Hide Menu */
+//   #hamitems { display: none; }
+//   #hamnav input:checked ~ #hamitems { display: block; }
+
+//   .my-name {
+//       position: absolute;
+//       top: 5px;
+//       left: 5px;
+//   }
+
+
+header {
+
+    background-color: plum;
+    padding-bottom: 10px;
+
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        padding: 4px 0 2px 2px;
+        margin: 4px;
+        
+        p {
+            font-size: 19px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    nav {
+        box-sizing: border-box;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        ul {
+            list-style-type: none;
+            padding-top: 5px;
+           a {
+              
+           }
+        }
+    }
+}
+
+main {
+    margin-top: 20px;
+    // display: flex;
+    // flex-direction: column;
+    section {
+        display: flex;
+        flex-direction: column;
+        .dot-gothic {
+            font-family: 'DotGothic16', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding: 15px 15px;
+        }
+        p {
+            padding: 0 35px;
+            text-align: justify;
+            
+        
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+}
+
+form {
+    padding: 20px;
+    label {
+        display: block;
+    }
+}
+.noto-sans {
+    font-family: 'Noto Sans JP', sans-serif
+}
+
+.pangolin  {
+    font-family: 'Pangolin', cursive;
+}
+
+
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+
+// Ipad size
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+
+}
+
+/* Large screens - DESKTOP */
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) { 
+
+} 
