@@ -10842,6 +10842,10 @@ a.text-dark:hover, a.text-dark:focus {
 /* Define mobile styles - Mobile First 
 
 WRITE EVERYTHING HERE IN THE ROOT TO FIT MOBILE (IPHONE X)* THEN ADD OTHER STUFF AFTER IN MEDIA QUIEREIS */
+* {
+  padding: 100px;
+}
+
 header {
   background-color: plum;
   padding-bottom: 10px;
