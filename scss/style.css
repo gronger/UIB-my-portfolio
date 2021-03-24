@@ -10842,10 +10842,6 @@ a.text-dark:hover, a.text-dark:focus {
 /* Define mobile styles - Mobile First 
 
 WRITE EVERYTHING HERE IN THE ROOT TO FIT MOBILE (IPHONE X)* THEN ADD OTHER STUFF AFTER IN MEDIA QUIEREIS */
-* {
-  padding: 100px;
-}
-
 header {
   background-color: plum;
   padding-bottom: 10px;
@@ -10886,6 +10882,18 @@ header nav ul {
   padding-top: 5px;
 }
 
+header nav ul a {
+  color: black;
+}
+
+header nav ul a:hover {
+  background-color: white;
+}
+
+header nav ul a:active {
+  background-color: plum;
+}
+
 main {
   margin-top: 20px;
 }
@@ -10913,9 +10921,43 @@ main section p {
   text-align: justify;
 }
 
-main section img {
+main section .me-pic {
   width: 150px;
   border-radius: 50%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section p {
+  text-align: justify;
+  padding: 0 35px;
+}
+
+.grid-logos .grid-logos-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-logos .grid-logos-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-logos .logo {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 20%;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -10926,8 +10968,13 @@ form {
   padding: 20px;
 }
 
-form label {
+form div {
+  padding-bottom: 20px;
+}
+
+form div label {
   display: block;
+  margin-bottom: 0;
 }
 
 .noto-sans {
