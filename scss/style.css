@@ -10842,9 +10842,14 @@ a.text-dark:hover, a.text-dark:focus {
 /* Define mobile styles - Mobile First 
 
 WRITE EVERYTHING HERE IN THE ROOT TO FIT MOBILE (IPHONE X)* THEN ADD OTHER STUFF AFTER IN MEDIA QUIEREIS */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 header {
-  background-color: plum;
-  padding-bottom: 10px;
+  background-color: #9ab4b4;
+  padding-bottom: 32px;
 }
 
 header .header-info {
@@ -10856,13 +10861,13 @@ header .header-info {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 4px 0 2px 2px;
-  margin: 4px;
+  margin: 0px;
 }
 
 header .header-info p {
   font-size: 19px;
   padding: 0;
-  margin: 0;
+  margin: 5px 0 0 10px;
 }
 
 header nav {
@@ -10873,7 +10878,7 @@ header nav {
   top: 0;
   right: 5px;
   text-align: center;
-  padding: 0;
+  padding: 5px;
   margin: 0;
 }
 
@@ -10895,10 +10900,15 @@ header nav ul a:active {
 }
 
 main {
-  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  margin-top: 0;
+  background-color: #8f9c7c;
 }
 
 main section {
+  background-color: #c4cda5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10928,9 +10938,16 @@ main section .me-pic {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #9ab4b4;
+  padding: 30px;
 }
 
 main section p {
+  margin-top: 20px;
   text-align: justify;
   padding: 0 35px;
 }
@@ -10964,15 +10981,24 @@ main section p {
           justify-content: center;
 }
 
+.grid-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.grid-cards .card {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
 form {
   padding: 20px;
-}
-
-form div {
-  padding-bottom: 20px;
-}
-
-form div label {
   display: block;
   margin-bottom: 0;
 }
@@ -10991,4 +11017,145 @@ form div label {
 
 /* Large screens - DESKTOP */
 /* min-width 1025px, large screens */
+@media only screen and (min-width: 769px) {
+  header {
+    background-color: #9ab4b4;
+    padding-bottom: 32px;
+  }
+  header .header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4px 0 2px 2px;
+    margin: 0px;
+  }
+  header .header-info p {
+    font-size: 24px;
+    padding: 0;
+    margin: 5px 0 0 10px;
+  }
+  header nav {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    right: 5px;
+    list-style-type: none;
+    padding-top: 25px;
+    font-size: 28px;
+    padding: 15px;
+  }
+  header nav ul li {
+    margin-top: 20px;
+  }
+  header nav ul li a {
+    color: black;
+    margin: 30px;
+    border: 1px black solid;
+    padding: 20px;
+    background-color: #c4cda5;
+  }
+  header nav ul li a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #8f9c7c;
+  }
+  header nav ul li a:active {
+    background-color: #c4cda5;
+  }
+  .index-grid {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    margin-top: 0;
+    background-color: #8f9c7c;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .index-grid section {
+    background-color: #c4cda5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px;
+  }
+  .index-grid section .dot-gothic {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 15px 15px;
+  }
+  .index-grid section p {
+    padding: 0 35px;
+    text-align: justify;
+    font-size: 24px;
+  }
+  .index-grid section .me-pic {
+    width: 350px;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .about-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-main .about-text p {
+    margin-top: 150px;
+    text-align: justify;
+    padding: 0 65px;
+    font-size: 24px;
+  }
+  .grid-logos .grid-logos-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 800px;
+    margin: 0 auto;
+  }
+  .grid-logos .logo {
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+    border-radius: 30%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
