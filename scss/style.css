@@ -10896,12 +10896,11 @@ header nav ul a:hover {
 }
 
 header nav ul a:active {
-  background-color: plum;
+  background-color: #8f9c7c;
 }
 
 main {
   width: 100%;
-  height: 100%;
   padding-top: 20px;
   margin-top: 0;
   background-color: #8f9c7c;
@@ -10926,9 +10925,10 @@ main section .dot-gothic {
   padding: 15px 15px;
 }
 
-main section p {
+main section .index-text {
   padding: 0 35px;
   text-align: justify;
+  font-size: 15px;
 }
 
 main section .me-pic {
@@ -10938,12 +10938,20 @@ main section .me-pic {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 footer {
   background-color: #9ab4b4;
   padding: 30px;
+  margin-top: 0px;
+  position: relative;
+  bottom: 0px;
+}
+
+footer p {
+  position: absolute;
+  right: 15px;
 }
 
 main section p {
@@ -10952,22 +10960,18 @@ main section p {
   padding: 0 35px;
 }
 
+.grid-logos {
+  margin-top: 50px;
+}
+
 .grid-logos .grid-logos-1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-logos .grid-logos-2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
 }
 
 .grid-logos .logo {
@@ -10995,6 +10999,15 @@ main section p {
   margin-bottom: 20px;
   border: 1px solid black;
   border-radius: 20px;
+  background-color: #d6dfb8;
+}
+
+.grid-cards .card .my-btn {
+  background-color: #9ab4b4;
+  margin-top: 20px;
+  font-family: pato;
+  font-size: 16px;
+  border-radius: 30px;
 }
 
 form {
@@ -11003,12 +11016,28 @@ form {
   margin-bottom: 0;
 }
 
-.noto-sans {
-  font-family: 'Noto Sans JP', sans-serif;
+form label {
+  display: block;
+  margin-bottom: 0;
 }
 
-.pangolin {
-  font-family: 'Pangolin', cursive;
+form input {
+  margin-bottom: 20px;
+  background-color: #d6dfb8;
+  border: solid 3px  #8f9c7c;
+}
+
+form textarea {
+  background-color: #d6dfb8;
+  border: solid 3px  #8f9c7c;
+}
+
+form button {
+  background-color: #9ab4b4;
+  margin-top: 20px;
+  font-family: Lato;
+  font-size: 16px;
+  border-radius: 30px;
 }
 
 .lato {
@@ -11016,7 +11045,7 @@ form {
 }
 
 /* Large screens - DESKTOP */
-/* min-width 1025px, large screens */
+/* min-width 769px, large screens */
 @media only screen and (min-width: 769px) {
   header {
     background-color: #9ab4b4;
@@ -11103,19 +11132,20 @@ form {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 50px;
+    padding: 60px;
   }
   .index-grid section .dot-gothic {
     font-family: 'DotGothic16', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 2px;
-    padding: 15px 15px;
+    padding: 15px 65px;
   }
   .index-grid section p {
-    padding: 0 35px;
+    padding: 0 5px;
     text-align: justify;
     font-size: 24px;
+    width: 1000px;
   }
   .index-grid section .me-pic {
     width: 350px;
@@ -11124,7 +11154,7 @@ form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 20px;
+    margin: 50px 0 0 30px;
   }
   .about-main {
     display: -webkit-box;
@@ -11132,10 +11162,14 @@ form {
     display: flex;
   }
   .about-main .about-text p {
-    margin-top: 150px;
+    margin-top: 170px;
     text-align: justify;
-    padding: 0 65px;
+    padding: 50px 75px;
     font-size: 24px;
+  }
+  .about-main .about-text p .margin-top-span {
+    margin-top: 50px;
+    padding-top: 100px;
   }
   .grid-logos .grid-logos-1 {
     display: -ms-grid;
@@ -11144,8 +11178,11 @@ form {
         grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    width: 800px;
+    gap: 10px;
+    width: 600px;
     margin: 0 auto;
+    margin-top: 150px;
+    margin-right: 150px;
   }
   .grid-logos .logo {
     width: 200px;
@@ -11156,6 +11193,68 @@ form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .grid-cards {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid-cards .card {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #d6dfb8;
+  }
+  .grid-cards .card .my-btn {
+    background-color: #9ab4b4;
+    margin-top: 20px;
+    font-family: pato;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  form {
+    padding: 60px;
+    display: block;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+  }
+  form .form-container {
+    margin: 0;
+    padding: 0;
+  }
+  form .form-container label {
+    display: block;
+    margin-bottom: 0;
+  }
+  form .form-container input {
+    margin-bottom: 20px;
+    background-color: #d6dfb8;
+    border: solid 3px  #8f9c7c;
+  }
+  form .form-container textarea {
+    background-color: #d6dfb8;
+    border: solid 3px  #8f9c7c;
+  }
+  form .form-container button {
+    background-color: #9ab4b4;
+    margin-top: 20px;
+    font-family: Lato;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 10%;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
